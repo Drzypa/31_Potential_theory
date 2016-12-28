@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfSchwarzChristoffelTransformation}
+\pmcreated{2013-03-22 18:20:27}
+\pmmodified{2013-03-22 18:20:27}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{example of Schwarz-Christoffel transformation}
+\pmrecord{6}{40974}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31A99}
+\pmclassification{msc}{30C20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\DeclareMathOperator{\arcosh}{arcosh}
+
+\begin{document}
+Using the Schwarz-Christoffel transformation, find a function $f$ which maps \PMlinkname{conformally}{ConformalMapping} the upper half of the $z$-plane onto the domain which located above the red broken line of $w$-plane in the below picture, such that
+\begin{align}
+f(-1) = i \;\; \mbox{and} \;\; f(1) = 0.
+\end{align}
+
+\begin{center}
+\begin{pspicture}(-3.5,-1.5)(3.7,3.6)
+\psaxes[Dx=10,Dy=10]{->}(0,0)(-3.5,-1.5)(3.5,3.5)
+\rput(-0.3,3.5){$y$}
+\rput(3.55,-0.3){$x$}
+\psline[linecolor=red,linewidth=0.04]{-}(-3.5,1)(0,1)
+\psline[linecolor=red,linewidth=0.06]{-}(0,1)(0,0)
+\psline[linecolor=red,linewidth=0.042]{-}(0,0)(3.3,0)
+\psdots[linecolor=red](0,1)(0,0)
+\rput(-2.5,1.25){$l$}
+\rput(0.2,0.9){$i$}
+\rput(0.2,-0.2){$0$}
+\rput(2,2.5){$w$-plane}
+\end{pspicture}
+\end{center}
+
+The border line of the image domain comes first along $l$ from the left and its argument gets in the point \,$w = i$\, the positive increment $\frac{3}{2}\pi = \pi-k_1\pi$,\, whence\, $k_1 = -\frac{1}{2}$.\, Then in the point\, $w = 0$\, the argument of the line attains the increment $\frac{1}{2}\pi = \pi-k_2\pi$,\, whence\, $k_2 = \frac{1}{2}$.\,Thus we have
+$$w = f(z) = c\!\int\!\frac{dz}{(z+1)^{-\frac{1}{2}}(z-1)^\frac{1}{2}}
+= c\!\int\!\sqrt{\frac{z+1}{z-1}}\,dz = c\,[\sqrt{z^2-1}+\arcosh{z}]+C.$$
+The conditions (1) determine the \PMlinkescapetext{constants} $c$ and $C$.\, Hence we obtain the sought function:
+$$f(z) \,=\, \frac{1}{\pi}(\sqrt{z^2-1}+\arcosh{z})$$
+
+%%%%%
+%%%%%
+\end{document}

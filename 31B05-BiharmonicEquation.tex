@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BiharmonicEquation}
+\pmcreated{2013-03-22 16:03:19}
+\pmmodified{2013-03-22 16:03:19}
+\pmowner{perucho}{2192}
+\pmmodifier{perucho}{2192}
+\pmtitle{biharmonic equation}
+\pmrecord{9}{38107}
+\pmprivacy{1}
+\pmauthor{perucho}{2192}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{definition*}{Definition.}
+\begin{document}
+\begin{definition*} A real-valued function $V\colon\mathbb{R}^n\to\mathbb{R}$ of \PMlinkname{class}{http://planetmath.org/encyclopedia/Cn.html} $C^4$, and satisfying the equation 
+\begin{align}
+\nabla^4 V=0,
+\end{align}
+also defines a biharmonic function, and (1) is called the biharmonic equation. Biharmonic operator is defined as 
+$$\nabla^4:=\sum_{k=1}^n\frac{\partial^4}{\partial{x_k}^4}+
+2\sum_{k=1}^{n-1}\sum_{l=k+1}^n\frac{\partial^4}{\partial{x_k}^2\partial{x_l}^2}\cdot$$
+\end{definition*}
+%%%%%
+%%%%%
+\end{document}

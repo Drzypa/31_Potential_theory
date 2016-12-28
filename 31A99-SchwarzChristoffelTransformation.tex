@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SchwarzChristoffelTransformation}
+\pmcreated{2013-03-22 14:41:02}
+\pmmodified{2013-03-22 14:41:02}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Schwarz-Christoffel transformation}
+\pmrecord{15}{36289}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31A99}
+\pmclassification{msc}{30C20}
+\pmsynonym{Schwarz' transformation}{SchwarzChristoffelTransformation}
+\pmrelated{ConformalMapping}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let
+$$w = f(z) = c\int\frac{dz}{(z-a_1)^{k_1}(z-a_2)^{k_2}\ldots(z-a_n)^{k_n}}+C,$$
+where the $a_j$'s are real numbers satisfying\, $a_1 < a_2 < \ldots < a_n$, the $k_j$'s are real numbers satisfying\, $|k_j| \leqq 1$;\, the integral expression means a complex antiderivative, $c$ and $C$ are complex constants.
+
+The transformation\, $z \mapsto w$\, maps the real axis and the upper half-plane \PMlinkname{conformally}{ConformalMapping} onto the closed area bounded by a broken line.\, Some vertices of this line may be in the infinity (the corresponding angles are = 0).\, When $z$ moves on the real axis from $-\infty$ to $\infty$, $w$ moves along the broken line so that the direction turns the amount $k_j\pi$ anticlockwise every \PMlinkescapetext{time} $z$ passes a point $a_j$.\, If the broken line closes to a polygon, then\, 
+$k_1\!+\!k_2\!+\!\ldots\!+\!k_n = 2$.
+
+This transformation is used in solving two-dimensional potential problems.\, The parameters $a_j$ and $k_j$ are chosen such that the given polygonal domain in the complex $w$-plane can be obtained.
+
+A half-trivial example of the transformation is
+$$w = \frac{1}{2}\int\frac{dz}{(z-0)^{\frac{1}{2}}} = \sqrt{z},$$
+which maps the upper half-plane onto the first quadrant of the complex plane.
+%%%%%
+%%%%%
+\end{document}

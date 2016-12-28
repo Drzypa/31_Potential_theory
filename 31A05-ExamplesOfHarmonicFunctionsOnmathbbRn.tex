@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExamplesOfHarmonicFunctionsOnmathbbRn}
+\pmcreated{2013-03-22 12:44:23}
+\pmmodified{2013-03-22 12:44:23}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{examples of harmonic functions on $\mathbb{R}^n$}
+\pmrecord{9}{33041}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31A05}
+\pmclassification{msc}{31B05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\Prob}[2]{\mathbb{P}_{#1}\left\{#2\right\}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\begin{document}
+Some real functions in~$\mathbb{R}^n$ (e.g. any linear function, or any affine function) are obviously harmonic functions.  What are some more interesting harmonic functions?
+
+\begin{itemize}
+\item
+For~$n\ge 3$, define (on the punctured space~$U=\mathbb{R}^n \setminus \{0\}$) the function~$f(x)=\norm{x}^{2-n}$. Then
+$$
+\frac{\partial f}{\partial x_i} = (2-n) \frac{x_i}{\norm{x}^n},
+$$
+and
+$$
+\frac{\partial^2 f}{{\partial x_i}^2} =
+n(n-2)\frac{x_i^2}{\norm{x}^{n+2}} - (n-2)\frac{1}{\norm{x}^n}
+$$
+Summing over $i=1,...,n$ shows $\Delta f\equiv 0$.
+\item
+For~$n=2$, define (on the punctured plane~$U=\mathbb{R}^2 \setminus \{0\}$) the function~$f(x,y)=\log(x^2+y^2)$.  Derivation and summing yield~$\Delta f\equiv 0$.
+\item
+For~$n=1$, the condition $(\Delta f)(x)=f''(x)\equiv 0$ forces~$f$ to be an affine function on every segment; there are no ``interesting'' harmonic functions in one dimension.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

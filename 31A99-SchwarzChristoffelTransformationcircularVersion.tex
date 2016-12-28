@@ -1,0 +1,259 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SchwarzChristoffelTransformationcircularVersion}
+\pmcreated{2013-03-22 16:52:57}
+\pmmodified{2013-03-22 16:52:57}
+\pmowner{stevecheng}{10074}
+\pmmodifier{stevecheng}{10074}
+\pmtitle{Schwarz-Christoffel transformation (circular version)}
+\pmrecord{8}{39136}
+\pmprivacy{1}
+\pmauthor{stevecheng}{10074}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31A99}
+\pmclassification{msc}{30C20}
+
+% The standard font packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% For neatly defining theorems and definitions
+%\usepackage{amsthm}
+
+% Including EPS/PDF graphics (\includegraphics)
+\usepackage{graphicx}
+
+% Making matrix-based graphics
+%%%\usepackage{xypic}
+
+% Enumeration lists with different styles
+%\usepackage{enumerate}
+
+% Set up the theorem environments
+%\newtheorem{thm}{Theorem}
+%\newtheorem*{thm*}{Theorem}
+
+\providecommand{\defnterm}[1]{\emph{#1}}
+
+% The standard number systems
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\intset}{\mathbb{Z}}
+
+% Absolute values and norms
+% Normal, wide, and big versions of the delimeters
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\absW}[1]{\left\lvert#1\right\rvert}
+\providecommand{\absB}[1]{\Bigl\lvert#1\Bigr\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\normW}[1]{\left\lVert#1\right\rVert}
+\providecommand{\normB}[1]{\Bigl\lVert#1\Bigr\rVert}
+
+% Differentiation operators
+\providecommand{\od}[2]{\frac{d #1}{d #2}}
+\providecommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2}}
+\providecommand{\ipd}[2]{\partial #1 / \partial #2}
+
+% Differentials on integrals
+\newcommand{\dx}{\, dx}
+\newcommand{\dt}{\, dt}
+\newcommand{\dmu}{\, d\mu}
+
+% Inner products
+\providecommand{\ip}[2]{\langle {#1}, {#2} \rangle}
+
+% Calligraphic letters
+\newcommand{\sF}{\mathcal{F}}
+\newcommand{\sD}{\mathcal{D}}
+
+% Standard spaces
+\newcommand{\Hilb}{\mathcal{H}}
+\newcommand{\Le}{\mathbf{L}}
+
+% Operators and functions occassionally used in my articles
+\DeclareMathOperator{\D}{D}
+\DeclareMathOperator{\linspan}{span}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\lindim}{dim}
+\DeclareMathOperator{\sinc}{sinc}
+
+% Probability stuff
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}}
+
+\begin{document}
+\PMlinkescapeword{representation}
+\PMlinkescapeword{languages}
+\PMlinkescapeword{cut}
+\PMlinkescapeword{cuts}
+\PMlinkescapeword{formula}
+
+
+
+The complex-variables function
+\[
+f(z) = \int_0^z \prod_{k=1}^n (\zeta - z_k)^{\alpha_k-1} d\zeta\,,
+\]
+maps the closed unit disc $\overline{D} = \{ \abs{z} \leq 1\}$
+in the complex plane conformally onto a polygon
+with $n$ sides, interior angles $0 < \alpha_k \pi < 2\pi$,
+and vertices $f(z_k)$.  (The polygon is assumed to be not self-intersecting.)
+The parameters $z_k$ lie on the unit circle,
+and depend, generally in a complicated way, on the length of the sides
+of the polygon.
+
+The fractional powers $(\zeta - z_k)^{\alpha_k - 1}$
+serve to clamp up an arc of the 
+circle into a pointy angle of measure $\alpha_k \pi$.  
+Indeed, the proof of the Schwarz-Christoffel formula shows that the function $f$
+can be decomposed near $z_k$ as
+\[
+f(z) = f(z_k) + (z-z_k)^{\alpha_k} g_k(z)\,,
+\]
+where $g_k$ is an analytic function with $g_k(z_k) \neq 0$.
+See Figure \ref{fig:clamp}.
+
+\begin{figure}
+\begin{center}
+\includegraphics{clamp.eps}
+\end{center}
+\caption{Mapping in a neighborhood of a boundary point}
+\label{fig:clamp}
+\end{figure}
+
+Note that the exponent is $\alpha_k$ --- not $\alpha_k/2$ ---
+because the neigbourhood of a point $z_k$ in the domain space
+looks like a half-disc.
+For the same reason, the fractional power used in the formula
+is to be a single-valued branch continuous on the half-disc.
+Finally, the extra $-1$ exponents that appear in the integral
+ representation for $f$
+come from the power rule for differentiation.
+
+\subsection{Example: $n=3$}
+
+Figure \ref{fig:triangle} illustrates a mapping
+from the disc to a triangle ($n=3$).
+The contours are the approximate images, under $f$, of circles
+of radius $0 < r \leq 1$.
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{triangle.eps}
+\caption{Image of a Schwarz-Christoffel mapping for a triangle}
+\end{center}
+\label{fig:triangle}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics{domain.eps}
+\end{center}
+\caption{Corresponding contours of the domain}
+\end{figure}
+
+We describe the method used to compute the figure.
+Points in the domain $\overline{D}$ are first parameterized 
+as $z = re^{i\theta}$,
+with $0 \leq r \leq 1$ and $0 \leq \theta < 2\pi$
+ranging over a discrete grid, shown schematically in Figure \ref{fig:circle}.
+The integral defining the function $f$ is path-independent,
+and a natural choice for the paths are
+rays emanating from the origin.
+When computing the integrals along each ray,
+we exploit the additivity of the complex path integral:
+\[
+f\bigl((r + \Delta r\bigr) e^{i\theta}) = f(re^{i\theta}) 
++ \int_{re^{i\theta}}^{(r+\Delta r) e^{i\theta}} \prod_{k=1}^n (\zeta - z_k)^{\alpha_k - 1} \, d\zeta\,,
+\]
+so that $f(z)$ is found by summing a previously-computed value
+and a new integral to be computed.  And the new integral
+is computed using 32-point Gauss quadrature
+after reparameterizing the path with $d\zeta = e^{i\theta} \, dr$.
+
+\begin{figure}
+\begin{center}
+\includegraphics{parameter.eps}
+\end{center}
+\caption{Parameterization of the domain for computing $f$}
+\label{fig:circle}
+\end{figure}
+
+
+The computation of the integrand
+\[
+\prod_{k=1}^n (\zeta - z_k)^{\alpha_k - 1} = \exp\Bigl( \sum_{k=1}^n (\alpha_k - 1) \log ( \zeta - z_k) \Bigr)
+\]
+ is straightforward, though 
+we must be careful to respect the branch cuts prescribed above.
+The $\log$ function in most computer languages
+takes a branch cut on the negative axis.
+To get the single-valued branches we need in this situation,
+we must instead compute $\zeta \mapsto \log ( \zeta - z_k)$ via the expression
+\[
+\zeta \mapsto \log iz_k + \log \frac{\zeta - z_k}{i z_k}\,,
+\]
+where $iz_k$ is the direction of the tangent to the circle at the point $z_k$.
+
+Finally, after having obtained a discrete set of image points $f(z)$
+traced along each circle $z = re^{i \theta}$,
+the contours in the figure are obtained by interpolating a 
+curved B\'ezier spline 
+through the image points.
+
+If a triangle is prescribed with the vertex locations, 
+it is not immediately obvious what the parameters $z_k$ should be to obtain
+that triangle.  In the examples here, we simply avoid this difficulty
+by arbitrarily choosing the parameters $z_k = e^{2\pi i (k-1)/n}$ 
+to be equally spaced on the unit circle, and hope that nice figures result.
+
+The $\alpha_k$ parameters are easily determined from the angles
+of the desired figure; they are, in this example:
+\[
+\alpha_1 = \tfrac14, \quad \alpha_2 = \tfrac12, \quad \alpha_3 = \tfrac14\,.
+\]
+
+
+\subsection{Example: $n=10$}
+
+Figure \ref{fig:star}
+shows an example with $n=10$ points.
+The strategy for computing this figure is similar to that
+of the triangle.
+
+The parameters for this star are (rounded to four decimal places):
+\begin{align*}
+\alpha_1 = 0.2422 \,,  \quad \alpha_2 = \alpha_1 = 1.3263\,,  \quad \alpha_3 = \alpha_9 = 0.3026 \,, \\
+\alpha_4 = \alpha_8 = 1.3026 \,,  \quad \alpha_5 = \alpha_7 = 0.2754\,,  \quad \alpha_6 = 1.3440 \,.
+\end{align*}
+
+\begin{figure}
+\begin{center}
+\includegraphics{star.eps}
+\end{center}
+\caption{Image of a Schwarz-Christoffel mapping for a star-shaped figure}
+\label{fig:star}
+\end{figure}
+
+\subsection{Demonstration computer programs}
+
+\begin{itemize}
+\item
+\PMlinkexternal{Python source code for producing images of the Schwarz-Christoffel transformation}{http://svn.gold-saucer.org/repos/PlanetMath/SchwarzChristoffelTransformationCircularVersion/schwarz-christoffel.py}
+\item
+\PMlinkexternal{Python source code for the explanatory diagrams}{http://svn.gold-saucer.org/repos/PlanetMath/SchwarzChristoffelTransformationCircularVersion/explanation.py}
+\end{itemize}
+
+\begin{thebibliography}{3}
+\bibitem{Ahlfors}
+Lars V. Ahlfors. {\it Complex Analysis}, third edition. McGraw-Hill, 1979.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

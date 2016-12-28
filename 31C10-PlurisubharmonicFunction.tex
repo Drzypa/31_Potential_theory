@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PlurisubharmonicFunction}
+\pmcreated{2013-03-22 14:29:09}
+\pmmodified{2013-03-22 14:29:09}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{plurisubharmonic function}
+\pmrecord{9}{36019}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31C10}
+\pmclassification{msc}{32U05}
+\pmsynonym{plurisubharmonic}{PlurisubharmonicFunction}
+\pmdefines{plurisuperharmonic function}
+\pmdefines{pseudoconvex function}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{defn}
+Let $f \colon G \subset {\mathbb{C}}^n \to {\mathbb{R}}$ be an upper semi-continuous function.   $f$ is called {\em plurisubharmonic}
+if for every complex line $\{ a + b z \mid z \in {\mathbb{C}} \}$
+the function $z \mapsto f(a + bz)$ is a subharmonic function on the set
+$\{ z \in {\mathbb{C}} \mid a + b z \in G \}$.
+\end{defn}
+
+Similarly, we could also define a {\em plurisuperharmonic} function just like
+we have a superharmonic function, but again it just means that $-f$ is
+plurisubharmonic, and so this extra \PMlinkescapetext{term} is not very useful.
+
+\begin{defn}
+A continuous plurisubharmonic function is said to be a {\em pseudoconvex function}.
+\end{defn}
+
+Note that since plurisubharmonic is a long word, many authors abbreviate
+with {\em psh}, {\em plsh}, or {\em plush}.
+
+\begin{thebibliography}{9}
+\bibitem{Krantz:several}
+Steven~G.\@ Krantz.
+{\em \PMlinkescapetext{Function Theory of Several Complex Variables}},
+AMS Chelsea Publishing, Providence, Rhode Island, 1992.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

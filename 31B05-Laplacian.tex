@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Laplacian}
+\pmcreated{2013-03-22 12:43:48}
+\pmmodified{2013-03-22 12:43:48}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{Laplacian}
+\pmrecord{18}{33030}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B05}
+\pmclassification{msc}{31B15}
+\pmrelated{DAlembertian}
+\pmrelated{Codifferential}
+\pmdefines{Laplace operator}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+\begin{document}
+Let $(x_1, \ldots, x_n)$ be Cartesian coordinates for some open set  $\Omega$ 
+in $\sR^n$. 
+Then the \emph{Laplacian} differential operator $\Delta$ is defined as
+$$
+\Delta = \frac{\partial^2 }{\partial x_1^2} + \cdots + \frac{\partial^2 }{\partial x_n^2}.
+$$
+In other words, if $f$ is a twice differentiable function $f:\Omega\to \sC$, then 
+$$
+\Delta f = \frac{\partial^2 f}{\partial x_1^2} + \cdots + \frac{\partial^2 f}{\partial x_n^2}.
+$$
+A coordinate independent definition of the Laplacian 
+is $\Delta = \nabla \cdot \nabla$, i.e., $\Delta$ is the composition of 
+gradient and codifferential.
+
+A harmonic function is one for which the Laplacian vanishes.
+
+
+\subsubsection*{Notes}
+An older symbol for the Laplacian is $\nabla^2$ -- conceptually the scalar product of $\nabla$ with itself. This form is more favoured by physicists.
+
+\subsubsection*{Derivation}
+\htmladdnormallink{Click here}{<http://planetmath.org/?method=l2h&from=collab&id=76&op=getobj">} to see an article that derives the Laplacian in spherical coordinates.
+
+%%%%%
+%%%%%
+\end{document}

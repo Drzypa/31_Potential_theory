@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerronFamily}
+\pmcreated{2013-03-22 14:19:42}
+\pmmodified{2013-03-22 14:19:42}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{Perron family}
+\pmrecord{6}{35797}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B05}
+\pmrelated{RadosTheorem}
+\pmdefines{Perron function}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{defn}
+Let $G \subset {\mathbb{C}}$ be a region, $\partial_\infty G$
+the extended boundary of $G$ and $S(G)$ the set of subharmonic functions
+on $G$, then
+if $f \colon \partial_\infty G \to {\mathbb{R}}$ is a continuous
+function then the set 
+\begin{equation*}
+{\mathcal{P}}(f,G) := \{ \varphi : \varphi \in S(G) \text{ and }
+\limsup_{z \to a} \varphi(z) \leq f(a) \text{ for all $a \in \partial_\infty G$} \} ,
+\end{equation*}
+is called the {\em Perron family}.
+\end{defn}
+
+One thing to note is the ${\mathcal{P}}(f,G)$ is never empty.  This is because
+$f$ is continuous on $\partial_\infty G$ it attains a maximum, say $|f| < M$,
+then the function $\varphi(z) := -M$ is in ${\mathcal{P}}(f,G)$.
+
+\begin{defn}
+Let $G \subset {\mathbb{C}}$ be a region and
+$f \colon \partial_\infty G \to {\mathbb{R}}$ be a continuous
+function then the function $u \colon G \to {\mathbb{R}}$
+\begin{equation*}
+u(z) := \sup \{ \phi : \phi \in {\mathcal{P}}(f,G) \} ,
+\end{equation*}
+is called the {\em Perron function} associated with $f$.
+\end{defn}
+
+Here is the reason for all these definitions.
+
+\begin{thm}
+Let $G \subset {\mathbb{C}}$ be a region and suppose $f \colon
+\partial_\infty G \to {\mathbb{R}}$ is a continuous function.
+If $u \colon G \to {\mathbb{R}}$ is the Perron function associated
+with $f$, then $u$ is a harmonic function.
+\end{thm}
+
+Compare this with \PMlinkname{Rado's theorem}{RadosTheorem} which works with
+harmonic functions with range in ${\mathbb{R}}^2$, but also gives a much
+stronger statement.
+
+\begin{thebibliography}{9}
+\bibitem{Conway:complexI}
+John~B. Conway.
+{\em \PMlinkescapetext{Functions of One Complex Variable I}}.
+Springer-Verlag, New York, New York, 1978.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

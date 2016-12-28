@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NeumannProblem}
+\pmcreated{2013-03-22 15:19:59}
+\pmmodified{2013-03-22 15:19:59}
+\pmowner{dczammit}{9747}
+\pmmodifier{dczammit}{9747}
+\pmtitle{Neumann problem}
+\pmrecord{10}{37147}
+\pmprivacy{1}
+\pmauthor{dczammit}{9747}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B15}
+\pmclassification{msc}{31B05}
+\pmclassification{msc}{31A05}
+\pmrelated{HarmonicFunction}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Suppose $\Omega$ is a region of $\sR^n$ and $\partial\Omega$ is the boundary of $\Omega$. 
+Further suppose $f$ is a function $f\colon\partial \Omega\to\sC$, and suppose $\frac{\partial}{\partial n}$ corresponds to taking a derivative in a direction normal to the boundary $\partial\Omega$ at any point.  Then the 
+\emph{Neumann problem} is to find a function $\phi\colon \Omega\cup \partial \Omega \to\sC$
+such that 
+\begin{eqnarray*}
+\frac{\partial\phi}{\partial n} &=& f,\quad \text{on $\partial \Omega$}, \\
+\nabla^2 \phi &=& 0,\quad \text{in $\Omega$}. 
+\end{eqnarray*}
+Here $\nabla^2$ represents the Laplacian operator and the second condition is that $\phi$ be a harmonic function on $\Omega$. The condition for the existence of a solution $\phi$ of the Neumann problem is that integral of the normal derivative of the function $\phi$, calculated over the entire boundary $\partial\Omega$, vanish. This follows from the identic equation
+\begin{align*}
+\int_{\partial\Omega}\frac{\partial\phi}{\partial n}d\sigma=
+\int_\Omega\nabla\!\cdot\!(\nabla\phi)d\tau=\int_\Omega\nabla^2\phi\,d\tau
+\end{align*}
+and from the fact that $\nabla^2\phi=0$.
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubharmonicAndSuperharmonicFunctions}
+\pmcreated{2013-03-22 14:19:39}
+\pmmodified{2013-03-22 14:19:39}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{subharmonic and superharmonic functions}
+\pmrecord{12}{35796}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31C05}
+\pmclassification{msc}{31A05}
+\pmclassification{msc}{31B05}
+\pmrelated{HarmonicFunction}
+\pmdefines{subharmonic}
+\pmdefines{subharmonic function}
+\pmdefines{superharmonic}
+\pmdefines{superharmonic function}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\begin{document}
+First let's look at the most general definition.
+
+\begin{defn}
+Let $G \subset {\mathbb{R}}^n$ and let $\varphi \colon G \to
+{\mathbb{R}} \cup \{ - \infty \}$ be an upper semi-continuous function,
+then $\varphi$ is {\em subharmonic} if for every $x \in G$ and $r > 0$ such that
+$\overline{B(x,r)} \subset G$ (the closure of the open ball of radius $r$ around $x$ is still in $G$) and every real valued continuous function $h$ on
+$\overline{B(x,r)}$ that is harmonic in $B(x,r)$ and satisfies $\varphi(x) \leq h(x)$
+for all $x \in \partial B(x,r)$ (boundary of $B(x,r)$) we have that
+$\varphi(x) \leq h(x)$ holds for all $x \in B(x,r)$.
+\end{defn}
+
+Note that by the above, the function which is identically $- \infty$ is subharmonic, but some authors exclude this function by definition.
+We can define {\em superharmonic} functions in a similar fashion to get that $\varphi$ is superharmonic if and only if $-\varphi$ is subharmonic.
+
+If we restrict our domain to the complex plane we can get the following definition.
+
+\begin{defn}
+Let $G \subset {\mathbb{C}}$ be a region and let $\varphi \colon
+G \to {\mathbb{R}}$ be a continuous function.  $\varphi$ is said to
+be {\em subharmonic} if whenever $D(z,r) \subset G$ (where $D(z,r)$ is a closed
+disc around $z$ of radius $r$) we have
+\begin{equation*}
+\varphi(z) \leq \frac{1}{2\pi} \int_0^{2\pi} \varphi(z+ r e^{i\theta}) d\theta ,
+\end{equation*}
+and $\varphi$ is said to be {\em superharmonic} if whenever $D(z,r) \subset G$
+we have
+\begin{equation*}
+\varphi(z) \geq \frac{1}{2\pi} \int_0^{2\pi} \varphi(z+ r e^{i\theta}) d\theta .
+\end{equation*}
+\end{defn}
+
+Intuitively what this means is that a subharmonic function is at any point
+no greater than the average of the values in a circle around that point.  This implies that a non-constant subharmonic function does not achieve its maximum
+in a region $G$ (it would achieve it at the boundary if it is continuous there).  Similarly for a superharmonic
+function, but then a non-constant superharmonic function does not achieve its
+minumum in $G$.  It is also easy to see that $\varphi$ is subharmonic if and only if $-\varphi$ is superharmonic.
+
+Note that when equality always holds in the above equation then $\varphi$ would
+in fact be a harmonic function.  That is, when $\varphi$ is both subharmonic and
+superharmonic, then $\varphi$ is harmonic.
+
+It is possible to relax the continuity statement above to take $\varphi$ only upper semi-continuous in the subharmonic case and lower semi-continuous in the
+superharmonic case.  The integral will then however need to be the 
+\PMlinkname{Lebesgue
+integral}{Integral2} rather than the Riemann integral which may not be defined for such
+a function.  Another thing to note here is that we may take ${\mathbb{R}}^2$ instead of ${\mathbb{C}}$ since we never did use complex multiplication.  In that case however we must rewrite the expression $z + r e^{i\theta}$ in \PMlinkescapetext{terms} of the
+real and imaginary parts to get an expression in ${\mathbb{R}}^2$.
+
+It is also possible generalize the range of the functions as well.  A subharmonic function could have a range of ${\mathbb{R}} \cup \{ -\infty \}$
+and a superharmonic function could have a range of ${\mathbb{R}} \cup \{ \infty \}$.  With this generalization, if $f$ is a holomorphic function
+then $\varphi(z) := \log \lvert f(z) \rvert$ is a subharmonic function if we 
+define the value of $\varphi(z)$ at the zeros of $f$ as $-\infty$. 
+Again it is important to note that with this
+generalization we again must use the Lebesgue integral.
+
+\begin{thebibliography}{9}
+\bibitem{Conway:complexI}
+John~B. Conway.
+{\em \PMlinkescapetext{Functions of One Complex Variable I}}.
+Springer-Verlag, New York, New York, 1978.
+\bibitem{Krantz:several}
+Steven~G.\@ Krantz.
+{\em \PMlinkescapetext{Function Theory of Several Complex Variables}},
+AMS Chelsea Publishing, Providence, Rhode Island, 1992.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

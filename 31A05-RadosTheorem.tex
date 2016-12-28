@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RadosTheorem}
+\pmcreated{2013-03-22 14:08:07}
+\pmmodified{2013-03-22 14:08:07}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{Rado's theorem}
+\pmrecord{8}{35549}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31A05}
+\pmrelated{HarmonicFunction}
+\pmrelated{PerronFamily}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{thm}[Rado]
+Suppose $\Omega \subset {\mathbb{R}}^2$ is a \PMlinkname{convex}{ConvexSet} \PMlinkname{domain}{Domain2} with a smooth boundary $\partial \Omega$ and suppose that ${\mathbb{D}}$ is the unit disc.  Then given any homeomorphism $\mu : \partial {\mathbb{D}} \rightarrow \partial \Omega$, there exists a unique harmonic function $u : {\mathbb{D}} \rightarrow \Omega$ such that $u = \mu$ on $\partial {\mathbb{D}}$ and $u$ is a diffeomorphism.
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{schoenyau}
+R.\@ Schoen, S.\@ T.\@ Yau.  \emph{\PMlinkescapetext{Lectures on Harmonic
+Maps}}.  International Press, Inc., Boston, Massachusetts, 1997
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirichletProblem}
+\pmcreated{2013-03-22 14:57:06}
+\pmmodified{2013-03-22 14:57:06}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{Dirichlet problem}
+\pmrecord{7}{36646}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B05}
+\pmclassification{msc}{31A05}
+\pmclassification{msc}{31B15}
+\pmrelated{HarmonicFunction}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Suppose $\Omega$ is a domain of $\sR^n$ and $\partial\Omega$ is the boundary of $\Omega$. 
+Further suppose $f$ is a function $f\colon\partial \Omega\to\sC$. Then the 
+\emph{Dirichlet problem} is to find a function $\phi\colon \Omega\cup \partial \Omega \to\sC$
+such that 
+\begin{eqnarray*}
+\phi &=& f,\quad \text{on $\partial \Omega$}, \\
+\nabla^2 \phi &=& 0,\quad \text{in $\Omega$}. 
+\end{eqnarray*}
+%%%%%
+%%%%%
+\end{document}

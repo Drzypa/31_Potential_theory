@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HarmonicFunction}
+\pmcreated{2013-03-22 12:43:46}
+\pmmodified{2013-03-22 12:43:46}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{harmonic function}
+\pmrecord{9}{33029}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31C05}
+\pmclassification{msc}{31B05}
+\pmclassification{msc}{31A05}
+\pmclassification{msc}{30F15}
+\pmrelated{RadosTheorem}
+\pmrelated{SubharmonicAndSuperharmonicFunctions}
+\pmrelated{DirichletProblem}
+\pmrelated{NeumannProblem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\Prob}[2]{\mathbb{P}_{#1}\left\{#2\right\}}
+\begin{document}
+A twice-differentiable real or complex-valued function $f\colon U\to\mathbb{R}$ or $f\colon U\to\mathbb{C}$, where $U\subseteq\mathbb{R}^n$ is some \PMlinkescapetext{domain}, is called \emph{harmonic} if its Laplacian vanishes on $U$, i.e. if $$\Delta f\equiv 0.$$
+
+Any harmonic function $f\colon\mathbb{R}^n\to\mathbb{R}$ or $f\colon\mathbb{R}^n\to\mathbb{C}$ satisfies Liouville's theorem.   Indeed, a holomorphic function \emph{is} harmonic, and a real harmonic function $f\colon U\to\mathbb{R}$, where $U\subseteq\mathbb{R}^2$, is locally the real part of a holomorphic function.  In fact, it is enough that a harmonic function $f$ be \PMlinkescapetext{bounded} below (or above) to conclude that it is \PMlinkescapetext{constant}.
+%%%%%
+%%%%%
+\end{document}

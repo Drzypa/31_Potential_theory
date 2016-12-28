@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PluriharmonicFunction}
+\pmcreated{2013-03-22 14:29:01}
+\pmmodified{2013-03-22 14:29:01}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{pluriharmonic function}
+\pmrecord{7}{36017}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31C05}
+\pmclassification{msc}{32A50}
+\pmclassification{msc}{31C10}
+\pmsynonym{pluriharmonic}{PluriharmonicFunction}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{defn}
+Let $f \colon G \subset {\mathbb{C}}^n \to {\mathbb{C}}$ be a $C^2$ (twice continuously differentiable) function.  $f$ is called {\em pluriharmonic}
+if for every complex line $\{ a + b z \mid z \in {\mathbb{C}} \}$
+the function $z \mapsto f(a + bz)$ is harmonic on the set
+$\{ z \in {\mathbb{C}} \mid a + b z \in G \}$.
+\end{defn}
+
+Note that every pluriharmonic function is a harmonic function, but not the other way around.  Further it can be shown that for holomorphic functions of several complex variables the real (and the imaginary) parts are locally pluriharmonic functions.  Do note however that just because a function is harmonic in each variable separately does not imply that it is pluriharmonic.
+
+\begin{thebibliography}{9}
+\bibitem{Krantz:several}
+Steven~G.\@ Krantz.
+{\em \PMlinkescapetext{Function Theory of Several Complex Variables}},
+AMS Chelsea Publishing, Providence, Rhode Island, 1992.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

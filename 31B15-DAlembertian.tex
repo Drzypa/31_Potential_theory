@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DAlembertian}
+\pmcreated{2013-03-22 17:55:18}
+\pmmodified{2013-03-22 17:55:18}
+\pmowner{invisiblerhino}{19637}
+\pmmodifier{invisiblerhino}{19637}
+\pmtitle{D'Alembertian}
+\pmrecord{8}{40414}
+\pmprivacy{1}
+\pmauthor{invisiblerhino}{19637}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{31B15}
+\pmclassification{msc}{31B05}
+\pmclassification{msc}{26B12}
+\pmsynonym{wave operator}{DAlembertian}
+\pmsynonym{D'Alembert operator}{DAlembertian}
+\pmrelated{Laplacian}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The D'Alembertian is the equivalent of the Laplacian in Minkowskian geometry. It is given by:
+\[
+\Box = \nabla^2 - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}
+\]
+Here we assume a Minkowskian metric of the form $(+, +, +, -)$ as typically seen in special relativity. The connection between the Laplacian in Euclidean space and the D'Alembertian is clearer if we write both operators and their corresponding metric.
+\subsection{Laplacian}
+\[
+\mbox{Metric: } ds^2 = dx^2 + dy^2 + dz^2
+\]
+\[
+\mbox{Operator: } \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}
+\]
+\subsection{D'Alembertian}
+\[
+\mbox{Metric: } ds^2 = dx^2 + dy^2 + dz^2 -cdt^2
+\]
+\[
+\mbox{Operator: } \Box = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}
+\]
+
+In both cases we simply differentiate twice with respect to each coordinate in the metric. The D'Alembertian is hence a special case of the generalised Laplacian.
+\section{Connection with the wave equation}
+The wave equation is given by:
+\[
+\nabla^2 u = \frac{1}{c^2}\frac{\partial^2}{\partial t^2} u
+\]
+Factorising in terms of operators, we obtain:
+\[
+(\nabla^2 - \frac{1}{c^2}\frac{\partial^2}{\partial t^2})u = 0
+\]
+or
+\[
+\Box u = 0
+\]
+Hence the frequent appearance of the D'Alembertian in special relativity and electromagnetic theory.
+\section{Alternative notation}
+The symbols $\Box$ and $\Box^2$ are both used for the D'Alembertian. Since it is unheard of to square the D'Alembertian, this is not as confusing as it may appear. The symbol for the Laplacian, $\Delta$ or $\nabla^2$, is often used when it is clear that a Minkowski space is being referred to.
+\section{Alternative definition}
+It is common to define Minkowski space to have the metric $(-, +, +, +)$, in which case the D'Alembertian is simply the negative of that defined above:
+\[
+\Box = \frac{1}{c^2} \frac{\partial^2}{\partial t^2} -\nabla^2
+\]
+%%%%%
+%%%%%
+\end{document}
