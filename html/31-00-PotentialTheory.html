@@ -1,0 +1,158 @@
+<!DOCTYPE html><html>
+<head>
+<title>potential theory</title>
+<!--Generated on Fri Feb  9 20:30:01 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">potential theory</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S0.SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.1 </span>Definition and Comments</h2>
+
+<div id="S0.SS1.p1" class="ltx_para">
+<p class="ltx_p">Potential theory may be defined as the study of harmonic functions.</p>
+</div>
+<div id="S0.SS1.p2" class="ltx_para">
+<p class="ltx_p">The term “potential theory” arises from the fact that, in 19th century physics, the fundamental forces of nature were believed to be derived from potentials which satisfied Laplace’s equation. Hence, potential theory was the study of functions which could serve as potentials. Nowadays, we know that nature is more complicated — the equations which describe forces are systems of non-linear partial differential equations such as the Einstein equations and the Yang-Mills equations and that the Laplace equation is only valid as a limiting case. Nevertheless, the term “potential theory” has remained as a convenient term for describing the study of functions which satisfy the Laplace equation.</p>
+</div>
+<div id="S0.SS1.p3" class="ltx_para">
+<p class="ltx_p">Obviously, there is considerable overlap between potential theory and the theory of the Laplace equation. To the extent that it is possible to draw a distinction between these two fields, the difference is more one of emphasis than subject matter and rests on the following distinction — potential theory focuses on the properties of the functions as opposed to the properties of the equation. For example, a result about the singularities of harmonic functions would be said to belong to potential theory whilst a result on how the solution depends on the boundary data would be said to belong to the theory of the Laplace equation. Of course, this is not a hard and fast distinction and, in practice there is considerable overlap between the two fields, with methods and results from one being used in the other.</p>
+</div>
+</section>
+<section id="S0.SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.2 </span>Symmetry</h2>
+
+<div id="S0.SS2.p1" class="ltx_para">
+<p class="ltx_p">A useful starting point and organizing principle in the study of harmonic functions is a consideration of the symmetries of the Laplace equation. Although it isn’t exactly a symmetry in the usual sense of the term, we can start with the observation that the Laplace equation is linear. This means that the fundamental object of study in potential theory is a linear space of functions. This observation will prove especially important when we consider function space approaches to the subject in a later section.</p>
+</div>
+<div id="S0.SS2.p2" class="ltx_para">
+<p class="ltx_p">As for symmetry in the usual sense of the term, we may start with the theorem that the symmetries of the <math id="S0.SS2.p2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional Laplace equation are exactly the conformal symmetries of <math id="S0.SS2.p2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional Euclidean space. This fact has several implications. First of all, one can consider harmonic functions which transform under irreducible representations of the conformal group or of its subgroups (such as the group or rotations or translations). Proceeding in this fashion, one systematically obtains the solutions of the Laplace equation which arise from separation of variables such as spherical harmonic solutions and Fourier series. By taking linear superpositions of these solutions, one can produce large classes of harmonic functions which can be shown to be dense in the space of all harmonic functions under suitable topologies.</p>
+</div>
+<div id="S0.SS2.p3" class="ltx_para">
+<p class="ltx_p">Second, one can use conformal symmetry to understand such classical tricks and techniques for generating harmonic functions as the Kelvin transform and the method of images.</p>
+</div>
+<div id="S0.SS2.p4" class="ltx_para">
+<p class="ltx_p">Third, one can use conformal transforms to map harmonic functions in one domain to harmonic functions in another domain. The most common instance of such a construction is to relate harmonic functions on the disk to harmonic functions on a half-plane.</p>
+</div>
+<div id="S0.SS2.p5" class="ltx_para">
+<p class="ltx_p">Fourth, one can use conformal symmetry to extend harmonic functions to harmonic functions on conformally flat Riemannian manifolds. Perhaps the simplest such extension is to consider a harmonic function defined on the whole of <math id="S0.SS2.p5.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> (with the possible exception of a discrete set of singular points) as a harmonic function on the <math id="S0.SS2.p5.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional sphere. More complicated situations can also happen. For instance, one can obtain a higher-dimensional analogue of Riemann surface theory by expressing a multiply-valued harmonic function as a single-valued function on a branched cover of <math id="S0.SS2.p5.m3" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, or one can regard harmonic functions which are invariant under a discrete subgroup of the conformal group as functions on a multiply-connected manifold or orbifold.</p>
+</div>
+</section>
+<section id="S0.SS3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.3 </span>Two dimensions</h2>
+
+<div id="S0.SS3.p1" class="ltx_para">
+<p class="ltx_p">From the fact that the group of conformal transforms is infinite dimensional in two dimensions and finite dimensional for more than two dimensions, one can surmise that potential theory in two dimensions is different than potential theory in other dimensions. This is correct and, in fact, when one realizes that any two-dimensional harmonic function is the real part of a complex analytic function, one sees that the subject of two-dimensional potential theory is substantially the same as that of complex analysis. For this reason, when speaking of potential theory, one focuses attention on theorems which hold in three or more dimensions. In this , a surprising fact is that many results and concepts originally discovered in complex analysis (such as Schwartz’s theorem, Morera’s theorem, the Casorati-Weierstrass theorem, Laurent series, and the classification of singularities as removable, poles and essential) generalize to results on harmonic functions in any dimension. By considering which theorems of complex analysis are special cases of theorems of potential theory in any dimension, one can obtain a feel for exactly what is special about complex analysis in two dimensions and what is simply the two-dimensional instance of more general results.</p>
+</div>
+</section>
+<section id="S0.SS4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.4 </span>Local behavior</h2>
+
+<div id="S0.SS4.p1" class="ltx_para">
+<p class="ltx_p">An important topic in potential theory is the study of the local behaviour of harmonic functions. Perhaps the most fundamental theorem about local behaviour is the regularity theorem for Laplace’s equation, which states that harmonic functions are analytic. There are results which describe the local structure of level sets of harmonic functions. There is Bôcher’s theorem, which characterizes the behavior of isolated singularities of positive harmonic functions. As alluded to in the last section, one can classify the isolated singularities of harmonic functions as removable singularities, poles, and essential singularities.</p>
+</div>
+</section>
+<section id="S0.SS5" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.5 </span>Inequalities</h2>
+
+<div id="S0.SS5.p1" class="ltx_para">
+<p class="ltx_p">A fruitful approach to the study of harmonic functions is consideration of inequalities they satisfy. Perhaps the most basic such inequality, from which most other inequalities may be derived, is the maximum principle. Another important result is Liouville’s theorem, which states the only bounded harmonic functions defined on the whole of <math id="S0.SS5.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> are, in fact constant functions. In addition to these basic inequalities, one has such inequalities as Cauchy’s estimate, Harnack’s inequality, and Schwarz’s inequality (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/SchwarzLemma</span>).</p>
+</div>
+<div id="S0.SS5.p2" class="ltx_para">
+<p class="ltx_p">One important use of these inequalities is to prove convergence of families of harmonic functions or sub-harmonic functions. These convergence theorems can often be used to prove existence of harmonic functions having particular properties.</p>
+</div>
+</section>
+<section id="S0.SS6" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.6 </span>Spaces of Harmonic functions</h2>
+
+<div id="S0.SS6.p1" class="ltx_para">
+<p class="ltx_p">Since the Laplace equation is linear, the set of harmonic functions defined on a given domain is, in fact, a vector space. By defining suitable norms and/or inner products, one can exhibit sets of harmonic functions which form Hilbert or Banach spaces. In this fashion, one obtains such spaces as Hardy space, Bloch space, and Bergmann space.</p>
+</div>
+</section>
+<section id="S0.SS7" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.7 </span>Bibliography</h2>
+
+<div id="S0.SS7.p1" class="ltx_para">
+<p class="ltx_p">S. Axler, P. Bourdon, W. Ramey, <em class="ltx_emph ltx_font_italic">Harmonic Function Theory</em>, Springer-Verlag 1992</p>
+</div>
+<div id="S0.SS7.p2" class="ltx_para">
+<p class="ltx_p">O. D. Kellogg <em class="ltx_emph ltx_font_italic">Foundations of Potential Theory</em>, Springer-Verlag 1929
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">potential theory</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">PotentialTheory</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:57:41</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:57:41</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 31-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">HolomorphicFunctionsAndLaplacesEquation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 20:30:01 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

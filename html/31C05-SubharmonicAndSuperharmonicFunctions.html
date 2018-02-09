@@ -1,0 +1,207 @@
+<!DOCTYPE html><html>
+<head>
+<title>subharmonic and superharmonic functions</title>
+<!--Generated on Fri Feb  9 20:30:39 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">subharmonic and superharmonic functions</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">First let’s look at the most general definition.</p>
+</div>
+<div id="Thmdefnx1" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition</span>.</h6>
+<div id="Thmdefnx1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="Thmdefnx1.p1.m1" class="ltx_Math" alttext="G\subset{\mathbb{R}}^{n}" display="inline"><mrow><mi>G</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math> and let <math id="Thmdefnx1.p1.m2" class="ltx_Math" alttext="\varphi\colon G\to{\mathbb{R}}\cup\{-\infty\}" display="inline"><mrow><mi>φ</mi><mo>:</mo><mrow><mi>G</mi><mo>→</mo><mrow><mi>ℝ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow></math> be an upper semi-continuous function,
+then <math id="Thmdefnx1.p1.m3" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is <span class="ltx_text ltx_font_italic">subharmonic</span> if for every <math id="Thmdefnx1.p1.m4" class="ltx_Math" alttext="x\in G" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>G</mi></mrow></math> and <math id="Thmdefnx1.p1.m5" class="ltx_Math" alttext="r&gt;0" display="inline"><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></math> such that
+<math id="Thmdefnx1.p1.m6" class="ltx_Math" alttext="\overline{B(x,r)}\subset G" display="inline"><mrow><mover accent="true"><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>¯</mo></mover><mo>⊂</mo><mi>G</mi></mrow></math> (the closure of the open ball of radius <math id="Thmdefnx1.p1.m7" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> around <math id="Thmdefnx1.p1.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is still in <math id="Thmdefnx1.p1.m9" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>) and every real valued continuous function <math id="Thmdefnx1.p1.m10" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> on
+<math id="Thmdefnx1.p1.m11" class="ltx_Math" alttext="\overline{B(x,r)}" display="inline"><mover accent="true"><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>¯</mo></mover></math> that is harmonic in <math id="Thmdefnx1.p1.m12" class="ltx_Math" alttext="B(x,r)" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math> and satisfies <math id="Thmdefnx1.p1.m13" class="ltx_Math" alttext="\varphi(x)\leq h(x)" display="inline"><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
+for all <math id="Thmdefnx1.p1.m14" class="ltx_Math" alttext="x\in\partial B(x,r)" display="inline"><mrow><mi>x</mi><mo>∈</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>B</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> (boundary of <math id="Thmdefnx1.p1.m15" class="ltx_Math" alttext="B(x,r)" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math>) we have that
+<math id="Thmdefnx1.p1.m16" class="ltx_Math" alttext="\varphi(x)\leq h(x)" display="inline"><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> holds for all <math id="Thmdefnx1.p1.m17" class="ltx_Math" alttext="x\in B(x,r)" display="inline"><mrow><mi>x</mi><mo>∈</mo><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Note that by the above, the function which is identically <math id="p2.m1" class="ltx_Math" alttext="-\infty" display="inline"><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></math> is subharmonic, but some authors exclude this function by definition.
+We can define <span class="ltx_text ltx_font_italic">superharmonic</span> functions in a similar fashion to get that <math id="p2.m2" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is superharmonic if and only if <math id="p2.m3" class="ltx_Math" alttext="-\varphi" display="inline"><mrow><mo>-</mo><mi>φ</mi></mrow></math> is subharmonic.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">If we restrict our domain to the complex plane we can get the following definition.</p>
+</div>
+<div id="Thmdefnx2" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition</span>.</h6>
+<div id="Thmdefnx2.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="Thmdefnx2.p1.m1" class="ltx_Math" alttext="G\subset{\mathbb{C}}" display="inline"><mrow><mi>G</mi><mo>⊂</mo><mi>ℂ</mi></mrow></math> be a region and let <math id="Thmdefnx2.p1.m2" class="ltx_Math" alttext="\varphi\colon G\to{\mathbb{R}}" display="inline"><mrow><mi>φ</mi><mo>:</mo><mrow><mi>G</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math> be a continuous function. <math id="Thmdefnx2.p1.m3" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is said to
+be <span class="ltx_text ltx_font_italic">subharmonic</span> if whenever <math id="Thmdefnx2.p1.m4" class="ltx_Math" alttext="D(z,r)\subset G" display="inline"><mrow><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>G</mi></mrow></math> (where <math id="Thmdefnx2.p1.m5" class="ltx_Math" alttext="D(z,r)" display="inline"><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a closed
+disc around <math id="Thmdefnx2.p1.m6" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> of radius <math id="Thmdefnx2.p1.m7" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>) we have</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\varphi(z)\leq\frac{1}{2\pi}\int_{0}^{2\pi}\varphi(z+re^{i\theta})d\theta," display="block"><mrow><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and <math id="Thmdefnx2.p1.m8" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is said to be <span class="ltx_text ltx_font_italic">superharmonic</span> if whenever <math id="Thmdefnx2.p1.m9" class="ltx_Math" alttext="D(z,r)\subset G" display="inline"><mrow><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>G</mi></mrow></math>
+we have</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\varphi(z)\geq\frac{1}{2\pi}\int_{0}^{2\pi}\varphi(z+re^{i\theta})d\theta." display="block"><mrow><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Intuitively what this means is that a subharmonic function is at any point
+no greater than the average of the values in a circle around that point. This implies that a non-constant subharmonic function does not achieve its maximum
+in a region <math id="p4.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> (it would achieve it at the boundary if it is continuous there). Similarly for a superharmonic
+function, but then a non-constant superharmonic function does not achieve its
+minumum in <math id="p4.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>. It is also easy to see that <math id="p4.m3" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is subharmonic if and only if <math id="p4.m4" class="ltx_Math" alttext="-\varphi" display="inline"><mrow><mo>-</mo><mi>φ</mi></mrow></math> is superharmonic.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Note that when equality always holds in the above equation then <math id="p5.m1" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> would
+in fact be a harmonic function. That is, when <math id="p5.m2" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is both subharmonic and
+superharmonic, then <math id="p5.m3" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is harmonic.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">It is possible to relax the continuity statement above to take <math id="p6.m1" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> only upper semi-continuous in the subharmonic case and lower semi-continuous in the
+superharmonic case. The integral will then however need to be the
+Lebesgue
+integral (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Integral2</span>) rather than the Riemann integral which may not be defined for such
+a function. Another thing to note here is that we may take <math id="p6.m2" class="ltx_Math" alttext="{\mathbb{R}}^{2}" display="inline"><msup><mi>ℝ</mi><mn>2</mn></msup></math> instead of <math id="p6.m3" class="ltx_Math" alttext="{\mathbb{C}}" display="inline"><mi>ℂ</mi></math> since we never did use complex multiplication. In that case however we must rewrite the expression <math id="p6.m4" class="ltx_Math" alttext="z+re^{i\theta}" display="inline"><mrow><mi>z</mi><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mrow></mrow></math> in  of the
+real and imaginary parts to get an expression in <math id="p6.m5" class="ltx_Math" alttext="{\mathbb{R}}^{2}" display="inline"><msup><mi>ℝ</mi><mn>2</mn></msup></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">It is also possible generalize the range of the functions as well. A subharmonic function could have a range of <math id="p7.m1" class="ltx_Math" alttext="{\mathbb{R}}\cup\{-\infty\}" display="inline"><mrow><mi>ℝ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></math>
+and a superharmonic function could have a range of <math id="p7.m2" class="ltx_Math" alttext="{\mathbb{R}}\cup\{\infty\}" display="inline"><mrow><mi>ℝ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">}</mo></mrow></mrow></math>. With this generalization, if <math id="p7.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is a holomorphic function
+then <math id="p7.m4" class="ltx_Math" alttext="\varphi(z):=\log\lvert f(z)\rvert" display="inline"><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo fence="true" stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="true" stretchy="false">|</mo></mrow></mrow></mrow></math> is a subharmonic function if we
+define the value of <math id="p7.m5" class="ltx_Math" alttext="\varphi(z)" display="inline"><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> at the zeros of <math id="p7.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> as <math id="p7.m7" class="ltx_Math" alttext="-\infty" display="inline"><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></math>.
+Again it is important to note that with this
+generalization we again must use the Lebesgue integral.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock">
+John B. Conway.
+.
+Springer-Verlag, New York, New York, 1978.
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock">
+Steven G. Krantz.
+,
+AMS Chelsea Publishing, Providence, Rhode Island, 1992.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p8" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">subharmonic and superharmonic functions</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">SubharmonicAndSuperharmonicFunctions</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:19:39</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:19:39</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">jirka (4157)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">jirka (4157)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">12</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">jirka (4157)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 31C05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 31A05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 31B05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HarmonicFunction</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">subharmonic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">subharmonic function</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">superharmonic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">superharmonic function</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 20:30:39 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
